@@ -1,0 +1,36 @@
+@startuml
+class org.example.SignForm {
+- JPanel signform
+- JButton signin
+- JLabel userlabel
+- JTextField usertextField
+- JPasswordField passwordField
+- void SignIn()
+- void SignUp()
+- void Event()
+- Connection ConnectDB()
+- void SetFrame()
+- void Add()
+- void LimitLength()
++ {static} void main(String[])
+}
+class org.example.ShopForm {
+- JScrollPane pane
+- JPanel shopform
+- JTable table
+- JTextField sousuokuang
+- JButton sousuo
+- Font font
+- JLabel ss
+- Connection ConnectDB()
+- void SouSuo()
+- void Event()
+- void Add()
+- void Table()
+- void Init()
+}
+
+
+org.example.JFrame <|-- org.example.SignForm
+org.example.JFrame <|-- org.example.ShopForm
+@enduml
